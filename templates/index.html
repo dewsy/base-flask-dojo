@@ -7,7 +7,7 @@
 <body>
     <ul>
         {% for first_name in first_names %}
-        <li> {{ first_name.first_name }} </li>
+        <li> <a href="/applicant/{{ first_name['id'] }}" >{{ first_name.first_name }}</a></li>
         {% endfor %}
     </ul>
 </body>

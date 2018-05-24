@@ -9,6 +9,7 @@ app = Flask(__name__)
 @app.route('/applicant')
 def first_names_list():
     first_names = utility.get_first_names()
+    print(first_names)
     return render_template('index.html', first_names=first_names)
 
 
